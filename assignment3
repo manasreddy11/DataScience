@@ -1,0 +1,44 @@
+1. Why are functions advantageous to have in your programs?
+1. Answer: They reduce the need for duplicate code, makes the program more dynamic
+
+2. When does the code in a function run: when it's specified or when it's called?
+2. Answer: The code in a function runs when it is called
+
+3. What statement creates a function?
+3. Answer: Def keyword creates a function
+
+4. What is the difference between a function and a function call?
+4. Answer: The function contains the definition of the function i.e., what and how to do.   The function call contains the input (the actual parameters) which is given to the called function which then works on them because it contains the definition, performs the procedure specified and returns if anything is to be returned.
+
+5. How many global scopes are there in a Python program? How many local scopes?
+5. Answer: theres only one global scope, and there are that many local scopes that the user has specified
+
+6. What happens to variables in a local scope when the function call returns?	
+6. Answer:  it is defined until the end of the function, and exists for as long as the function is executing
+
+7. What is the concept of a return value? Is it possible to have a return value in an expression?
+7. Answer: The return statement, sends the function result back to the caller, it is possible to have a result value in an expression, ex . a = is_prime(5)
+
+8. If a function does not have a return statement, what is the return value of a call to that function?
+8. Answer: If a function doesn’t have a return statement, the return value of the call to that function is undefined 
+
+9. How do you make a function variable refer to the global variable?
+ Answer: use the ‘global’ variable keyword to that global variable and you can use it in the function 
+
+10. What is the data type of None?
+10. NoneType Object 
+
+11. What does the sentence import areallyourpetsnamederic do?
+11. Answer the sentence “import areallyourpetsnamedderic” imports the file “areallyourpetsnamedderic” to be used in your code
+
+12. If you had a bacon() feature in a spam module, what would you call it after importing spam?
+12. Answer: import spam
+	Spam.bacon()
+
+13. What can you do to save a programme from crashing if it encounters an error?
+13. One can use the try… except method , to see where exactly the error is being raised 
+
+14. What is the purpose of the try clause? What is the purpose of the except clause?
+14. Answer: When the function is called, the try clause will run. If no exceptions are raised, the program will run as expected.But if an exception is raised in the try clause, the flow of execution will immediately jump to the except clause to handle the exception.
+
+

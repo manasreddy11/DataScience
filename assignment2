@@ -1,0 +1,106 @@
+1.What are the two values of the Boolean data type? How do you write them?
+1. Answer: True and False and writing them Respectively is also True, and False
+
+2. What are the three different types of Boolean operators?
+2. Answer: And, Or , Not 
+
+3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean values for the operator and what it evaluate ).
+3. Answer ,
+	 * AND: 			
+A	B	Output
+0	0	0
+0	1	0
+1	0	0
+1	1	1
+	 * OR
+	A		B		Output 
+	0	0		0
+	1		0		1
+	0		1		1
+	1		1		1
+	* NOT
+	A		Output
+	0	1
+	1		0
+	
+
+4. What are the values of the following expressions?
+(5 > 4) and (3 == 5): False
+not (5 > 4) : False
+(5 > 4) or (3 == 5) : True 
+not ((5 > 4) or (3 == 5)) : False
+(True and True) and (True == False) : False
+(not False) or (not True): True
+
+5. What are the six comparison operators?
+> greater than
+>= greater than or equal to
+< less than
+<= less than or equal to
+= is equal to
+<> is not equal to
+
+6. How do you tell the difference between the equal to and assignment operators? Describe a condition and when you would use one.
+6. Answer: Equal to implying two values are equal to one another i.e a = 5, b= 5, a==b which is an equality sign, assignment operator(=) assigns a values to the variable like a = 5, implying the variable “a” = 5
+
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+print('eggs')
+if spam > 5:
+print('bacon')
+else:
+print('ham')
+print('spam')
+print('spam')
+
+7. Answer: Block 1:
+spam = 0
+if spam == 10:
+print('eggs')
+
+block2: 
+if spam > 5:
+print('bacon')
+block3:
+else:
+print('ham')
+print('spam')
+print('spam')
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+Spam= 0 
+If spam ==1:
+print(“hello”)
+if spam==2:
+print(“Howdy”)
+else:
+print(“Greetings!”)
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+Ctrl+Z
+
+10. How can you tell the difference between break and continue?
+Break: it eliminates the execution of the remaining iteration of loop 
+Continue: It will terminate only the current iteration of the loop 
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+Range(10): prints range(0,10) and contain numbers from 1 to 10 
+Range(0,10): has number from 0,10 excluding 10 
+Range (0,10,1) : numbers from 0,10 excluding 10 ad skipping 1 number 
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+12. Answer: 
+i = 0
+for i in range(1,11):
+    print(i)
+while loop:
+i= 1
+while(i<=10):
+    print(i)
+    i= i+1
+
+13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+Spam.bacon()
+
+

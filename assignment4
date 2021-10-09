@@ -1,0 +1,59 @@
+1. What exactly is []?
+1. [] – represents the index method, that is, in a given set of characters, list or tuples etc we can access the “position ” of a character, number or complex number in the given set of charracters tuples, ists, etc , for example
+I = [1,2,3,4] , i[0] = 1
+
+2. In a list of values stored in a variable called spam, how would you assign the value 'hello' as the third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+2. Answer: spam[2] = “hello”
+Let's pretend the spam includes the list ['a', 'b', 'c', 'd'] for the next three queries.
+
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+3. Answer: d
+
+4. What is the value of spam[-1]?
+4. answer: “d”
+5. What is the value of spam[:2]?
+
+5. Answer: “a”, “b”, “c”
+Let's pretend bacon has the list [3.14, 'cat,' 11, 'cat,' True] for the next three questions.
+
+6. What is the value of bacon.index('cat')?
+6. answer: 1
+
+7. How does bacon.append(99) change the look of the list value in bacon?
+7. Answer: [3.14, 'cat,' 11, 'cat,' True, 99]
+
+8. How does bacon.remove('cat') change the look of the list in bacon?
+8. answer: [3.14, 'cat,' 11, True]
+
+9. What are the list concatenation and list replication operators?
+9. Answer: List concatenation operators: help join or merge two lists
+List replication operators: help copy the same list, “n” number of times  
+
+10. What is difference between the list methods append() and insert()?
+10. Answer: append() add a value to the end of the list
+Insert(): adds an element to a specified index of the list 
+
+11. What are the two methods for removing items from a list?
+11. Answer: Remove() and pop()
+
+12. Describe how list values and string values are identical.
+12. Answer: List values and string values are identical as values in lists are generally stored in “ ”,
+Thus mimicking strings. 
+
+13. What's the difference between tuples and lists?
+13. Answer: Tuples are an immutable data type, ie values once added cannot be changed. 
+
+14. How do you type a tuple value that only contains the integer 42?
+14. Answer: a = (42)
+
+15. How do you get a list value's tuple form? How do you get a tuple value's list form?
+15. Answer: Adding ‘[]’ around the tuple can convert the the tuples into a list and vice vera for tuples value list form 
+Ex . [(2,3), (4,5)]  &  ([2,3], [5,4])
+
+16. Variables that "contain" list values are not necessarily lists themselves. Instead, what do they contain?
+16. Answer: Just values assigned in the list 
+
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+17.Answer: if the change made in the list after it is deep-copyed, didn’t affect the original list it is said to be deep copyed. 
+If you make a change in the copyied version, and it makes a change in the original list then kt is said to just be copyed.
+

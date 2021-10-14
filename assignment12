@@ -1,0 +1,32 @@
+1. In what modes should the PdfFileReader() and PdfFileWriter() File objects will be opened?
+1. Answer: PdfFileReader() is used 'rb' mode i.e. read binary PdfFileWriter() is used 'wb' mode i.e. write binary
+2. From a PdfFileReader object, how do you get a Page object for page 5?
+2. Answer: use getpage(5) method.
+3. What PdfFileReader variable stores the number of pages in the PDF document?
+3. Answer: numPages stores the total no of pages in a pdf
+4. If a PdfFileReader object’s PDF is encrypted with the password swordfish, what must you do before you can obtain Page objects from it?
+4. Answer: step 1 - load pdf [ PyPDF2.PdfFileReader(open('encrypted.pdf', 'rb')) ] step 2 - check weather it is encrypted [ pdf.isEncrypted ] step 3 - if encrypted use [ pdf.decrypt('swordfish') ]
+5. What methods do you use to rotate a page?
+5. Answer: For anticlockwise: rotateCounterClockwise() for clockwise : rotateClockwise()
+6. What is the difference between a Run object and a Paragraph object?
+6. Answer: Word document contain formatted text wrapped within three object levels: lowest level: run objects. middle level: paragraph objects. highest level: document object. Run Object is used for inline content, text, pictures and other items within a paragraph.
+7. How do you obtain a list of Paragraph objects for a Document object that’s stored in a variable named doc?
+7. Answer: a = docx.Document(‘trail.docx’)
+Len(a.paragraphs)
+8. What type of object has bold, underline, italic, strike, and outline variables?
+8. Answer: Run object
+9. What is the difference between False, True, and None for the bold variable?
+9. Answer: True stands for on 
+False stands for off
+None stands for not available 
+10. How do you create a Document object for a new Word document?
+10. Answer: doc = docx.Document()
+doc.add_paragraph(‘world’)
+doc.save(“hello.docx”)
+11. How do you add a paragraph with the text 'Hello, there!' to a Document object stored in a variable named doc?
+11. Answer: doc = docx.Document()
+doc.add_paragraph(‘Hello’)
+doc.save(hello.docx)
+12. What integers represent the levels of headings available in Word documents?
+12. Answer: integers 1-4 are for various heading levels where 1 is the main heading and 4 is the lowest subheading 
+

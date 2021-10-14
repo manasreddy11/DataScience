@@ -1,0 +1,33 @@
+1. What are escape characters, and how do you use them?
+1. Answer: Escape character is used to insert characters in a string. We use escape characters by using “\”. Ex , txt = “We are \“Indians”\
+2. What do the escape characters n and t stand for?
+2. Answer: n stands for new line, t stands for new tab 
+3. What is the way to include backslash characters in a string?
+3. Answer: By using “\” for example txt = “We are \“Indians”\
+4. The string "Howl's Moving Castle" is a correct value. Why isn't the single quote character in the word Howl's not escaped a problem?
+4. Answer: As the “ ‘ ” in Howl’s is a single quote whereas the “ “ ” used in the string is a double quote used to denote the string 
+5. How do you write a string of newlines if you don't want to use the n character?
+5.  Answer: We can use the “end” parameter 
+6. What are the values of the given expressions?
+'Hello, world!'[1] 
+'Hello, world!'[0:5]
+'Hello, world!'[:5]
+'Hello, world!'[3:]
+6. Answer: 1. e 2. Hello 3. Hello 4.  lo, world!
+7. What are the values of the following expressions?
+'Hello'.upper() , 
+'Hello'.upper().isupper()
+'Hello'.upper().lower()
+7. Answer: HELLO, True, hello
+8. What are the values of the following expressions?
+'Remember, remember, the fifth of July.'.split()
+'-'.join('There can only one.'.split())
+8. Answer: ['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.']
+There-can-only-one.
+
+9. What are the methods for right-justifying, left-justifying, and centering a string?
+9. Answer: ljust(), rjust(), center(), are the methods used for right-justifying, left justifying, and centering a string 
+10. What is the best way to remove whitespace characters from the start or end?
+10. Answer: Using the trim() method 
+
+

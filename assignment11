@@ -1,0 +1,41 @@
+1. Create an assert statement that throws an AssertionError if the variable spam is a negative integer.
+1. Answer: def check_nagative(spam):
+		Assert spam> 0, ‘enter a positive integer’
+	      Check_negative(-3)
+2. Write an assert statement that triggers an AssertionError if the variables eggs and bacon contain strings that are the same as each other, even if their cases are different (that is, 'hello' and 'hello' are considered the same, and 'goodbye' and 'GOODbye' are also considered the same).
+2. Answer: 
+Def assert_check(eggs, bacon):
+	eggs = eggs.lower()
+	bacon = bacon.lower()
+	assert eggs == bacon, “enter the same words”
+eggs = “goodbye”
+bacon= “GOODbye”
+assert_check(eggs, bacon)
+
+3. Create an assert statement that throws an AssertionError every time.
+3. Answer: def always_error():
+	              Assert Flase, “Assertion statement everytime”
+Always_error()
+4. What are the two lines that must be present in your software in order to call logging.debug()?
+4. Answer: import logging
+Logging.basicConfig(filename = “manas.txt”, level = logging.DEBUG, format = ‘%(asctime)s - %(message)s - %(message)s- %(levelname)s’)
+logging.debug(‘manas’)
+logging.debug(‘test message’)
+5. What are the two lines that your program must have in order to have logging.debug() send a logging message to a file named programLog.txt?
+5. Answer: logging.basicConfig(filename = “programLog.txt”, level = logging.DEBUG, format = ‘%(message)s - %(asctime)s - %(levelname)s’)
+logging.debug(‘manas’)
+logging.debug(‘manas test’)
+6. What are the five levels of logging?
+6. Answer: 1. Debug, 2. Info, 3. Warnings , 4. Error, 5. Critical 
+7. What line of code would you add to your software to disable all logging messages?
+7. Answer: logging.disable = True
+8.Why is using logging messages better than using print() to display the same message?
+8. Answer: print is used to display any particular message or help, whereas logging is used to record all events like error, info, debug messages , timestamps , etc .
+9. What are the differences between the Step Over, Step In, and Step Out buttons in the debugger?
+9. Answer; 
+Step Over: This button will step over i.e. it will execute that line but result returned without debugging. Step In: This button helps entering debugger and start debugging line by line. Step Out: This breaks out of the debugger.
+10.After you click Continue, when will the debugger stop ?
+10. Answer: This will cause the program to continue running normally, without pausing for debugging untill it is completed.
+11. What is the concept of a breakpoint?
+11. Answer: this will help step line by line through the code.
+

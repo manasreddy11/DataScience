@@ -1,0 +1,132 @@
+1. Make a class called Thing with no contents and print it. Then, create an object called example from this class and also print it. Are the printed values the same or different?
+1. Answer: 
+class thing:
+	pass
+class example(thing):
+	pass
+example 
+thing 
+They are’nt the same thing 
+2. Create a new class called Thing2 and add the value 'abc' to the letters class attribute. Letters should be printed.
+2. class thing2:
+	letters= ‘abc’
+thing2.letters
+3. Make yet another class called, of course, Thing3. This time, assign the value 'xyz' to an instance (object) attribute called letters. Print letters. Do you need to make an object from the class to do this?
+3. Answer: class things3:
+		letters = ‘xyz’
+Things3.letters
+4. Create an Element class with the instance attributes name, symbol, and number. Create a class object with the values 'Hydrogen,' 'H,' and 1.
+ 4. Answer: class element:
+    def __init__(self,name,symbol,number):
+        self.name = name
+        self.symbol = symbol
+        self.number = number
+        print("\n name: {} \n symbol: {} \n number: {}".format(self.name,self.symbol,self.number))
+    
+    
+ele = element('hydrogen', 'H', 1)
+print(ele)
+ 
+5. Make a dictionary with these keys and values: 'name': 'Hydrogen', 'symbol': 'H', 'number': 1. Then, create an object called hydrogen from class Element using this dictionary.
+5. 
+ele_dict = {'name': 'Hydrogen', 'symbol': 'H', 'number': 1} hydrogen = element(**ele_dict) 
+print(hydrogen)
+6. For the Element class, define a method called dump() that prints the values of the object’s attributes (name, symbol, and number). Create the hydrogen object from this new definition and use dump() to print its attributes.
+6. Answer : class element:
+    def __init__(self,name,symbol,number):
+        self.name = name
+        self.symbol = symbol
+        self.number = number
+    
+    def dump(self):
+        print(self.name,self.symbol,self.number)
+
+hydrogen = element('hydrogen', 'H', 1)
+hydrogen.dump()
+
+
+7. Call print(hydrogen). In the definition of Element, change the name of method dump to __str__, create a new hydrogen object, and call print(hydrogen) again.
+7. Answer: class element:
+    def __init__(self,name,symbol,number):
+        self.name = name
+        self.symbol = symbol
+        self.number = number
+        
+    
+    def __str__(self):
+        return "\n name: {} \n symbol: {} \n number: {}".format(self.name,self.symbol,self.number)
+
+hydrogen = element('hydrogen', 'H', 1)
+print(hydrogen)
+
+8. Modify Element to make the attributes name, symbol, and number private. Define a getter property for each to return its value.
+8.  class element:
+    def __init__(self,name,symbol,number):
+        self.name = name
+        self.symbol = symbol
+        self.number = number
+    
+    def name(self):
+        return self.__name
+    
+    def symbol(self):
+        return self.__symbol
+    
+    def number(self):
+        return self.__number
+
+ele = element("rushikesh","rmp", '91')
+
+print(ele.name+"\n"+ele.symbol+"\n"+ele.number )
+
+9. Define three classes: Bear, Rabbit, and Octothorpe. For each, define only one method: eats(). This should return 'berries' (Bear), 'clover' (Rabbit), or 'campers' (Octothorpe). Create one object from each and print what it eats.
+9. class bear:
+    def eat(self):
+        return "berries"
+
+class rabbit:
+    def eat(self):
+        return "clover"
+
+class octothorpe:
+    def eat(self):
+        return "campers"
+
+b = bear()
+r = rabbit()
+o = octothorpe()
+
+print(b.eat())
+print(r.eat())
+print(o.eat())
+
+
+10. Define these classes: Laser, Claw, and SmartPhone. Each has only one method: does(). This returns 'disintegrate' (Laser), 'crush' (Claw), or 'ring' (SmartPhone). Then, define the class Robot that has one instance (object) of each of these. Define a does() method for the Robot that prints what its component objects do.
+class laser:
+    def does(self):
+        return "disintegrate"
+    
+class claw:
+    def does(self):
+        return "crush"
+    
+class smartphone:
+    def does(self):
+        return "ring"
+    
+class robot:
+    def __init__(self, laser, claw, smartphone):
+        self.laser = laser
+        self.claw = claw
+        self.smartphone = smartphone
+    
+    def does(self):
+        print(self.laser.does(),self.claw.does(), self.smartphone.does())
+        
+l = laser()
+c = claw()
+s = smartphone()
+robot = robot(l,c,s)
+robot.does()
+
+

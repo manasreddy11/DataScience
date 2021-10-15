@@ -1,0 +1,54 @@
+1. Add the current date to the text file today.txt as a string.
+1. Answer: 
+import datetime from datetime import date now = date.today() cur_date = now.isoformat() cur_date
+with open('today.txt','w') as file:
+    file.write(cur_date)
+
+2. Read the text file today.txt into the string today_string
+2. Answer: with open('today.txt','r') as file:
+    today_string = file.read()
+today_string
+
+3. Parse the date from today_string.
+3. Answer: from datetime import datetime
+format = '%Y-%m-%d'
+datetime.strptime(today_string,format)
+
+4. List the files in your current directory
+4. Answer: import os
+os.listdir('.')
+
+5. Create a list of all of the files in your parent directory (minimum five files should be available).
+5. Answer: import os
+os.listdir('..')
+
+6. Use multiprocessing to create three separate processes. Make each one wait a random number of seconds between one and five, print the current time, and then exit.
+6. Answer: import multiprocessing
+
+def printsec(seconds):
+    from datetime import datetime
+    from time import sleep
+    sleep(seconds)
+    print('wait', seconds, 'seconds, time is', datetime.utcnow())
+    
+if __name__ == '__main__':
+    import random    
+    for n in range(3):
+        seconds = random.random()
+        proc = multiprocessing.Process(target=printsec, args=(seconds,))
+        proc.start()
+
+7. Create a date object of your day of birth.
+Answer: 
+dob = date(1998,9,9)
+dob
+
+8. What day of the week was your day of birth?
+8. Answer: my_dob.weekday()
+
+9. When will you be (or when were you) 10,000 days old?
+9. Answer: from datetime import timedelta
+day10000 = my_dob + timedelta(days=10000)
+day10000
+
+

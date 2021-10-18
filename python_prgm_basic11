@@ -1,0 +1,74 @@
+1.	Write a Python program to find words which are greater than given length k?
+1.Answer: 
+def greaterthan(sentense): words = [] 
+split = sentense.split(" ") 
+print(split) 
+x = int(input("Enter length: ")) 
+for i in split:
+ if len(i)>x:
+ words.append(i) 
+return words
+2.	Write a Python program for removing i-th character from a string?
+2.Answer: def remove_char(sentense):
+    split = sentense.split(" ")
+    i_th = int(input("Enter position: "))
+    for i in split:
+        if split[i_th]==i:
+            split.remove(i)
+    sentense = " ".join(split)
+    return sentense
+
+3.	Write a Python program to split and join a string?
+4.	Answer:def split_join(sentense):
+    split = sentense.split()
+    print("Splited sentense: ",split)
+    join  = ' '.join(split)
+    print("sentense joined is: ",join)
+
+5.	Write a Python to check if a given string is binary string or not?
+5.Answer: def binary_check(string):
+    arrange = set(string)
+    binary = {'0','1'}
+    
+    if binary == arrange or arrange=={'0'} or arrange == {'1'}:
+        print("String is binary")
+    else:
+        print("String not binary")
+
+6.	Write a Python program to find uncommon words from two Strings?
+6.Answer: string1 = str(input("Enter String: "))
+string2 = str(input("Enter String: "))
+x = string1.split()
+y = string2.split()
+print(x,"\n", y)
+UC = []
+for i in x:
+    if i not in y:
+        UC.append(i)
+for j in y:
+    if j not in x:
+        UC.append(j)
+print(UC)
+
+7.	Write a Python to find all duplicate characters in string?
+7.Answer: string = str(input("Enter string:  "))
+char = []
+duplicate = []
+for i in string:
+    if i  not in char:
+        char.append(i)
+    else:
+        duplicate.append(i)
+print("Duplicate characters are: " ,duplicate)
+
+8.	Write a Python Program to check if a string contains any special character?
+8.Answer: spl_char = '[@_!#$%^&*()<>?/\|}{~:]'
+string = str(input("Enter string: "))
+
+for i in string:
+    if i not in spl_char:
+        continue
+        
+    else:
+        print("Special Char {} found in given string".format(i))
+

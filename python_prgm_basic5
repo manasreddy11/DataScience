@@ -1,0 +1,50 @@
+1.	Write a Python Program to Find LCM?
+1.Answer: def lcm(num_1,num_2):
+    if num_1>num_2:
+        max = num_1
+    else:
+        max = num_2
+    while True:
+        if max%num_1==0 and max%num_2==0:
+            print("LCM of {} and {} is {}".format(num_1, num_2, max))
+            break
+        max = max+1
+
+2.	Write a Python Program to Find HCF?
+2. def hcf(num_1,num_2):
+    if num_1<num2:
+        min = num_1
+    else:
+        min = num_2
+    for i in range(1,min+1):
+        if num_1%i==0 and num_2%i==0:
+            hcf=i
+            break
+    print("HCF is: ", hcf)
+
+3.	Write a Python Program to Convert Decimal to Binary, Octal and Hexadecimal?
+3. x = int(input("Enter Decimal Number: "))
+print("Decimal to Binary: ",bin(x))
+print("Decimal to Octal: ",oct(x))
+print("Decimal to Hexadecimal: ",hex(x))
+
+4.	Write a Python Program To Find ASCII value of a character?
+4. def ascii_value(character):
+    return ord(character)
+
+ascii_value("x")
+
+5.	Write a Python Program to Make a Simple Calculator with 4 basic mathematical operations?
+5.Answer: def calculator(a,b):
+    operation = str(input("What operation would you like to perform: "))
+    if operation == "add":
+        print("{} + {} = {}".format(a,b,a+b))
+    elif operation == "substract":
+        print("{} - {} = {}".format(a,b,a-b))
+    elif operation == "multiply":
+        print("{} X {} = {}".format(a,b,a*b))
+    elif operation == "division":
+        print("{} / {} = {}".format(a,b,a/b))
+    else:
+        print("Enter correct operation")
+

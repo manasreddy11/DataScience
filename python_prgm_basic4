@@ -1,0 +1,58 @@
+1.	Write a Python Program to Find the Factorial of a Number?
+1.Answer: a = int(input("Enter number: "))
+factorial = 1
+if a<0:
+    print("Factorial does not exist")
+elif a==0:
+    print("Factorial is 1")
+else:
+    for i in range(1,a+1):
+        factorial = factorial*i
+    print("Factorial of {} is {}".format(a, factorial))
+
+2.	Write a Python Program to Display the multiplication Table?
+2.Answer: a = int(input("Enter number: "))
+
+for i in range(1,11):
+    product = a*i
+    print("{} X {} = {}".format(a,i,product))
+
+3.	Write a Python Program to Print the Fibonacci sequence?
+3.Answer: 
+n = int(input("Enter desired length: ")) a = 0 b = 1 sum = 0 count = 1 print("Fibonacci Series: ", end = " ") while(count <= n): print(sum, end = " ") count += 1 a = b b = sum sum = a + b
+4.	Write a Python Program to Check Armstrong Number?
+4. num = int(input("Enter number to check: "))
+rem = 0
+s = 0
+temp = num
+while temp>0:
+    rem = temp%10
+    s = s + rem**3
+    temp = temp//10
+if num==s:
+    print("its armstrong number")
+else:
+    print("not armstrong number")
+
+5.	Write a Python Program to Find Armstrong Number in an Interval?
+5. lower = int(input("Enter lower limit of interval: "))
+upper = int(input("Enter upper limit of interval: "))
+print("Armstrong numbers in given interval are: ", end = " ")
+for num in range(lower,upper+1):
+    s = 0
+    temp = num
+    while temp>0:
+        rem = temp%10
+        s = s + rem**3
+        temp = temp//10
+        if num==s:
+            print(num, end=" ")
+
+6.	Write a Python Program to Find the Sum of Natural Numbers?
+6. num = int(input("Enter number upto which sum is required: "))
+sum = 0
+while num>0:
+    sum = sum+num
+    num -= 1
+print("Sum of natural numbers is: ", sum)
+

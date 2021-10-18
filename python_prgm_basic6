@@ -1,0 +1,55 @@
+1.	Write a Python Program to Display Fibonacci Sequence Using Recursion?
+1.Answer: def fibonacci(x,y,n):
+    if n==0:
+        return
+    result = x+y
+    print(result)
+    fibonacci(y, result, n-1 )
+
+n1 = 0
+n2 = 1
+n = int(input("Required length of the series: "))
+print(n1)
+print(n2)
+
+print(fibonacci(n1,n2,n-2))
+
+2.	Write a Python Program to Find Factorial of Number Using Recursion?
+2.Answer: def fact(n):
+    if n==0:
+        return 1
+    return n*fact(n-1)
+
+fact(5)
+
+3.	Write a Python Program to calculate your Body Mass Index?
+3.Answer: def bmi(wt,ht):
+    result = wt/ht**2
+    print("Your BMI is: ",result)
+    if result>= 18.5 and result<=24.9:
+        print("Healthy Range")
+    elif result<18.5:
+        print("Underweight")
+    else:
+        print("overweight")
+    
+weight = float(input("Enter weight in kg: "))
+print(weight,"kg")
+height = float(input("Enter height in m: "))
+print(height,"m")
+
+bmi(weight,height)
+
+4.	Write a Python Program to calculate the natural logarithm of any number?
+4.Answer: 
+import math n = float(input("Enter any number: ")) print(math.log(n))
+5.	Write a Python Program for cube sum of first n natural numbers?
+5.Answer: def cube_sum(n):
+    result = 0
+    for i in range(1,n+1):
+        result = result+(i*i*i)
+    return result
+
+
+print(cube_sum(5))
+

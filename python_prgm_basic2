@@ -1,0 +1,46 @@
+1.	Write a Python program to convert kilometers to miles?
+1.Answer: def km_to_mile(km):
+		Miles = km*0.621371
+		Print(“{} km is equal to {}miles. ” .format(km,miles))
+	             A= km_to_mile(500)
+2.	Write a Python program to convert Celsius to Fahrenheit?
+2.Answer: def celsius_to_fahrenheit(C):
+    fah = (C * 9/5) + 32
+    print("{}°C is equal to {}°F".format(C,fah))
+    
+a = celsius_to_fahrenheit(10)
+
+3.	Write a Python program to display calendar?
+3.Answer: import calendar
+def display_calender(year,month):
+    print(calendar.month(year,month))
+a = display_calender(1998,7)
+
+4.	Write a Python program to solve quadratic equation?
+4.Answer: a = int(input("Enter num_1: "))
+b = int(input("Enter num_2: "))
+c = int(input("Enter num_3: "))
+
+print("Quadratic Equation is: {}x^2+{}x+{}=0".format(a,b,c))
+
+if a==0:
+    print("a should not be equal to Zero")
+else:
+    r = b**2 - 4*a*c
+    x1 = (((-b) + r**0.5)/(2*a))
+    x2 = (((-b) - r**0.5)/(2*a))
+    print("Two possible values of our quadratic equation are {} and {}".format(x1,x2))
+
+5.	Write a Python program to swap two variables without temp variable?
+5.Answer: a = float(input("Enter variable_1: "))
+b = float(input("Enter variable_2: "))
+
+print('before swapping a = {} and b = {}'.format(a,b))
+
+a = a+b
+b = a-b
+a = a-b
+
+print('after swapping a = {} and b = {}'.format(a,b))
+
+

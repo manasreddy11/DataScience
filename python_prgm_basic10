@@ -1,0 +1,95 @@
+
+1. Write a Python program to find sum of elements in list?¶
+
+1.Answer:
+a = [1,2,3,4,5,6]
+
+sum = 0
+for i in a:
+    sum = sum+i
+print(sum)
+21
+2. Write a Python program to Multiply all numbers in the list?
+
+2.Answer:
+m = 1
+for i in a:
+    m = m*i
+print(m)
+720
+3. Write a Python program to find smallest number in a list?
+
+3.Answer:
+x = [10,464,123,2,5,4,45,48486,5451]
+x.sort()
+print(x[0])
+2
+4. Write a Python program to find largest number in a list?
+
+4.Answer:
+x.sort()
+print(x[-1])
+48486
+5. Write a Python program to find second largest number in a list?
+
+5.Answer:
+x.sort()
+print(x[1])
+4
+6. Write a Python program to find N largest elements from a list?
+
+6.Answer:
+def nthlargest(n):
+    L.sort()
+    print("{}th largest number is {}".format(n, L[-n]))
+
+nthlargest(3)
+3th largest number is 464
+7. Write a Python program to print even numbers in a list?
+
+6.Answer:
+even = []
+for i in L:
+    if i%2==0:
+        even.append(i)
+print(even)
+[2, 4, 10, 464, 48486]
+8. Write a Python program to print odd numbers in a List?
+	
+8.Answer:	
+odd = []
+for i in L:
+    if i%2!=0:
+        odd.append(i)
+print(odd)
+[5, 45, 123, 5451]
+9. Write a Python program to Remove empty List from List?
+9.Answer:
+l = [[],123,2,3,[1,2,3],[]]
+for i in l:
+    if i==[]:
+        l.remove(i)
+print(l)
+[123, 2, 3, [1, 2, 3]]
+10. Write a Python program to Cloning or Copying a list?
+10.Answer:
+def cloning(l):
+    copy = []
+    for i in l:
+        copy.append(i)
+    print("original list : {}\nCloned List: {}".format(l,copy))
+
+cloning(l)
+original list : [123, 2, 3, [1, 2, 3]]
+Cloned List: [123, 2, 3, [1, 2, 3]]
+11. Write a Python program to Count occurrences of an element in a list?
+11.Answer:
+l = [10,20,30,10,20,30,10]
+element = 10
+count = 0
+for i in l:
+    if element == i:
+        count+=1
+print("{} has occured {} times".format(element,count))
+10 has occured 3 times
+

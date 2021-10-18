@@ -1,0 +1,40 @@
+1.	Write a Python program to print "Hello Python"?
+1.Answer: input = input(“enter input:”)
+Print(input)
+2.	Write a Python program to do arithmetical operations addition and division.?
+2.Answer: x = int(input("Enter Num_1: "))
+y = int(input("Enter Num_2: "))
+ops = input("Enter Operation: ")
+if ops == "addition":
+    z = x+y
+    print("addition is ",z)
+elif ops == "division":
+    a = x/y
+    print("Division is ",a)
+else:
+    print("Enter correct operation")
+
+3.	Write a Python program to find the area of a triangle?
+3. def area_of_triangle(base,height):
+    area = (base*height)/2
+    print(area)
+    
+a = area_of_triangle(2,3)
+
+4.	Write a Python program to swap two variables?
+4.Answer: x = input("Enter num_1: ")
+print(x)
+y = input("Enter num_2: ")
+print(y)
+
+temp = x
+x = y
+y = temp
+
+print("{} and {} are new valuse of x and y respectively".format(x,y))
+
+5.	Write a Python program to generate a random number?
+5.Answer: import random
+a = random.random()
+print(a)
+

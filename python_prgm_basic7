@@ -1,0 +1,69 @@
+1.	Write a Python Program to find sum of array?
+1.Answer: def sum_array(*args):
+    sum=0
+    for i in args:
+        sum = sum+i
+    return sum
+    
+x = sum_array(1,2,3,4,5,6)
+x
+array = []
+size = int(input("Length of array: "))
+for i in range(size):
+    elements = int(input())
+    array.append(elements)
+    
+print("provided array: {} \n and sum of given array is: {}".format(array,sum(array)))
+
+
+2.	Write a Python Program to find largest element in an array?
+2.Answer: array = []
+size = int(input("Length of array: "))
+for i in range(size):
+    elements = int(input())
+    array.append(elements)
+    
+print("provided array: {} \n and largest element in given array is: {}".format(array,max(array)))
+
+3.	Write a Python Program for array rotation?
+3.Answer: array = []
+size = int(input("Length of array: "))
+for i in range(size):
+    elements = int(input())
+    array.append(elements)
+    
+print("original array: {} and \n rotated array is: {}".format(array,array[::-1]))
+
+4.	Write a Python Program to Split the array and add the first part to the end?
+4.Answer: array = []
+size = int(input("Length of array: "))
+for i in range(size):
+    elements = int(input())
+    array.append(elements)
+print(array)
+
+mid = size//2
+
+split = array[:mid]
+print("splitted part is: ",split)
+
+array = array[mid:]
+print("after spliting remaining array is: ",array)
+
+array = array+split
+print("Final Array: ",array)
+
+5.	Write a Python Program to check if given array is Monotonic?
+5. def monotonic(array):
+    return(all(array[i]<=array[i+1] for i in range(len(array)-1)) or 
+           all(array[i]>=array[i+1] for i in range(len(array)-1)))
+array = []
+size = int(input("Length of array: "))
+for i in range(size):
+    elements = int(input())
+    array.append(elements)
+print(array)
+
+print(monotonic(array))
+
+

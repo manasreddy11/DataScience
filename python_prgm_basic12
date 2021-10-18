@@ -1,0 +1,64 @@
+1.	Write a Python program to Extract Unique values dictionary values?
+1.Answer: d = {'511':'Ram','512':'Shyam','513':'manas','514':'reddy','515':'sita'}
+l = []
+for val in d.values():
+    if val in l:
+        continue
+    else:
+        l.append(val)
+        
+print(l)
+
+2.	Write a Python program to find the sum of all items in a dictionary?
+2.Answer: d = {'a':[101,401],'b':[2,143],'c':[14,185]}
+l = []
+for i in d.values():
+    for j in i:
+        l.append(j)
+print(sum(l))
+
+3.	Write a Python program to Merging two Dictionaries?
+3.Answer: d1 = {'a':100,'b':200,'c':300}
+d2 = {'d':400,'e':500,'f':600}
+d2.update(d1)
+d2
+
+4.	Write a Python program to convert key-values list to flat dictionary?
+4.Answer: l = ['a',100,'b',200,'c',300,'d',400,'e',500,'f',600]
+l1= []
+l2= []
+for i in range(0,len(l),2):
+    l1.append(l[i])
+
+for j in range(1,len(l),2):
+    if j not in l1:
+        l2.append(l[j])
+#print(l1)
+#print(l2)
+
+d = dict(zip(l1,l2))
+print("List {} to \n Dictionary {}".format(l,d))
+
+5.	Write a Python program to insertion at the beginning in OrderedDict?
+5.Answer: from collections import OrderedDict
+d = {'a': 100, 'b': 200, 'c': 300, 'd': 400, 'e': 500, 'f': 600}
+od = OrderedDict(d)
+print(od)
+od['g'] = 700
+print(od)
+od.move_to_end('g', False)
+print(od)
+
+
+6.	Write a Python program to check order of character in string using OrderedDict()?
+6.Answer: unordered = {'a': 1000, 'f': 200, 'd': 300, 'c': 400, 'b': 500, 'e': 600}
+print(unordered)
+od = OrderedDict(sorted(unordered.items()))
+print(od)
+
+7.	Write a Python program to sort Python Dictionaries by Key or Value?
+7.Answer: x = {'a': 10001, 'f': 210, 'd': 3007, 'c': 4500, 'b': 1500, 'e': 650}
+sort = sorted(x.items())
+
+print("Sorted by key: ",sort)
+
